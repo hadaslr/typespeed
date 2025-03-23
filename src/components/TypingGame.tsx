@@ -16,14 +16,14 @@ const sentences = [
 const TypingGame = () => {
   const [text, setText] = useState(sentences[0]);
   const [userInput, setUserInput] = useState("");
-  const [startTime, setStartTime] = useState(null);
+  const [startTime, setStartTime] = useState<number | null>(null);
   const [elapsedTime, setElapsedTime] = useState(0);
   const [wpm, setWpm] = useState(0);
   const [accuracy, setAccuracy] = useState(100);
   const [isDone, setIsDone] = useState(false);
 
   useEffect(() => {
-    let interval;
+    let interval: string | number | NodeJS.Timeout | undefined;
 
     if (userInput.length === 1 && startTime === null) {
       setStartTime(Date.now());
@@ -64,7 +64,7 @@ const TypingGame = () => {
     setIsDone(false);
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: { key: string; }) => {
     if (e.key === "Enter" && !isDone) {
       setIsDone(true);
     }
