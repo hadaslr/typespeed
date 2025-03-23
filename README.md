@@ -28,7 +28,11 @@ Installation
 
 Clone the repository:
 
+<<<<<<< HEAD
 git clone https://github.com/yourusername/TypeSpeed.git
+=======
+git clone https://github.com/hadaslr/TypeSpeed.git
+>>>>>>> 7a93d5b2cb6df4dd08887471a7f45cb59a6445c0
 cd TypeSpeed
 
 Install dependencies:
@@ -83,7 +87,11 @@ Contributing
 
 Feel free to submit issues or pull requests to improve the game! 🚀
 
+<<<<<<< HEAD
 Author
 
 Developed by [Your Name] – Your GitHub Profile
+=======
+©️ Made with ❤️ by Hadas LR
+>>>>>>> 7a93d5b2cb6df4dd08887471a7f45cb59a6445c0
 
