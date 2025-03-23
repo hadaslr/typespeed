@@ -1,54 +1,89 @@
-# React + TypeScript + Vite
+TypeSpeed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TypeSpeed is a simple yet engaging typing speed test game built with React and Tailwind CSS. It challenges players to type sentences as quickly and accurately as possible, measuring their Words Per Minute (WPM) and accuracy.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎯 Random Sentence Selection – A new random sentence for every game session.
 
-## Expanding the ESLint configuration
+⏳ Real-time Timer – Tracks elapsed time as you type.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+⚡ Live WPM Calculation – Displays words per minute dynamically.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+✅ Accuracy Tracking – Measures typing accuracy in real-time.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🎮 Interactive UI – Built with React and styled using Tailwind CSS.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🔄 Restart Functionality – Instantly restart the game with a new sentence.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Technologies Used
+
+React (useState, useEffect for state management and effects)
+
+Tailwind CSS (styling and responsive UI design)
+
+JavaScript (handling game logic and user input)
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/yourusername/TypeSpeed.git
+cd TypeSpeed
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+How to Play
+
+Start typing the displayed sentence.
+
+The timer begins when you type the first character.
+
+Press Enter when you finish typing to see your results.
+
+Check your WPM, accuracy, and time taken.
+
+Click Restart to try again with a new sentence.
+
+Folder Structure
+
+TypeSpeed/
+├── src/
+│   ├── components/
+│   │   ├── TypingGame.tsx  # Main typing game component
+│   ├── App.tsx             # Root component
+│   ├── index.tsx           # React entry point
+├── public/
+│   ├── index.html          # Main HTML file
+├── package.json            # Dependencies and scripts
+├── tailwind.config.js      # Tailwind CSS configuration
+├── README.md               # Project documentation
+
+Future Enhancements
+
+🔥 Add a leaderboard to track high scores.
+
+🌍 Support for multiple languages.
+
+🎨 Dark and light theme toggle.
+
+🏆 Achievements and progress tracking.
+
+License
+
+This project is open-source and available under the MIT License.
+
+Contributing
+
+Feel free to submit issues or pull requests to improve the game! 🚀
+
+Author
+
+Developed by [Your Name] – Your GitHub Profile
+
